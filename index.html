@@ -18,20 +18,20 @@ Cambio del d&oacute;lar
 Total
 </td></tr>
 <tr><td>
-<div class="valor vuno" contenteditable >
+<div class="valor vuno" contenteditable > 70000 </div>
 </td><td>
-<div class="valor vdos" contenteditable >
+<div class="valor vdos" contenteditable > 825 </div>
 </td><td>
-<div class="valor vtres" contenteditable >
+<div class="valor vtres" contenteditable > 10 </div>
 </td></tr></tbody></table>
 
 <script>
-let a = document.getElementsByTagName("div")[0].value;
-let b = document.getElementsByTagName("div")[1].value;
+let a = document.getElementsByTagName("div")[0];
+let b = document.getElementsByTagName("div")[1];
 let c = document.getElementsByTagName("div")[2];
 
 a.onchange=()=>{
-c.innerHTML = a / b;
+c.innerHTML = document.getElementsByTagName("div")[0].value / document.getElementsByTagName("div")[1].value;
 }
 
 b.onchange=()=>{
