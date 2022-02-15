@@ -25,4 +25,19 @@ Total
 <div class="valor vtres" contenteditable >
 </td></tr></tbody></table>
 
+<script>
+let a = document.getElementsByTagName("div")[0].value;
+let b = document.getElementsByTagName("div")[1].value;
+let c = document.getElementsByTagName("div")[2];
+
+a.onchange=()=>{
+c.innerHTML = a / b;
+}
+
+b.onchange=()=>{
+c.innerHTML = a / b;
+}
+
+</script>
+
 </body></html>
