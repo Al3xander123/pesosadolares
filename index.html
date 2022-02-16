@@ -32,10 +32,13 @@ let c = document.getElementsByTagName("div")[2];
 
 a.onchange=()=>{
 c.innerHTML = document.getElementsByTagName("div")[0].value / document.getElementsByTagName("div")[1].value;
+console.log(a,b,c);
 }
 
 b.onchange=()=>{
-c.innerHTML = a / b;
+//c.innerHTML = a / b;
+c.innerHTML = document.getElementsByTagName("div")[0].value / document.getElementsByTagName("div")[1].value;
+console.log(a,b,c);
 }
 
 </script>
